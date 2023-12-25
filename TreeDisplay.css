@@ -1,0 +1,13 @@
+.a-TreeView-row.is-selected{
+    background-color: #28213a00 !important;
+}
+
+.fa.fa-check-square-o{
+    color: black !important;
+    font-weight: bold;
+}
+
+.a-TreeView-content.is-selected .a-TreeView-label{
+    font-weight: bold !important;
+    color: green !important;
+}

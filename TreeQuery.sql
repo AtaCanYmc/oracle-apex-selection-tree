@@ -1,0 +1,11 @@
+SELECT
+ID AS "ID",
+NAME AS NAME,
+PARENT_ID AS "PARENT_ID",
+CASE
+   WHEN (IS_SELECTED = 1) THEN
+       'fa-check-square-o'
+   WHEN (IS_SELECTED = 0) THEN
+       'fa-square-o'
+END AS "ICON"
+FROM USER_TABLE UT
