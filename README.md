@@ -25,10 +25,8 @@ Enhance your Oracle APEX applications with a dynamic selection tree featuring ch
 ## Example Usage
 
 ```javascript
-// Create a new instance of the SelectionTree class
-const myTree = new SelectionTree();
-
-myTree = new SelectiveTree(
+// Create a new instance of the SelectiveTree class
+var myTree = new SelectiveTree(
     staticId="myTree_static_id", 
     childSelection=false, 
     selectIcon="fa-check-square-o", 
