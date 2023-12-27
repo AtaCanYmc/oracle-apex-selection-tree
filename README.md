@@ -28,17 +28,16 @@ Enhance your Oracle APEX applications with a dynamic selection tree featuring ch
 // Create a new instance of the SelectionTree class
 const myTree = new SelectionTree();
 
-// Add nodes to the tree
-const rootNode = new Node('Root', 'root', 'Root Node');
-const childNode1 = new Node('Child1', 'root', 'Child Node 1');
-const childNode2 = new Node('Child2', 'root', 'Child Node 2');
+myTree = new SelectiveTree(
+    staticId="myTree_static_id", 
+    childSelection=false, 
+    selectIcon="fa-check-square-o", 
+    unselectIcon="fa-square-o");
 
-myTree.addNode(rootNode);
-myTree.addNode(childNode1);
-myTree.addNode(childNode2);
-
-// Render the tree in a specified container
-myTree.render('tree-container');
+// Expand all nodes for better view
+myTree.expandAll();
+// Synchronization of DB and UI
+MyTree.setDefaultSelections();
 ```
 
 
