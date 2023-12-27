@@ -39,6 +39,8 @@ myTree.addNode(childNode2);
 
 // Render the tree in a specified container
 myTree.render('tree-container');
+```
+
 
 ## Customization
 
